@@ -4,7 +4,7 @@ import { client } from '../lib/apollo-client';
 import { GET_ALL_POSTS } from '../lib/graphql_queries';
 
 export default function Home({ posts }) {
-	console.log('posts', posts);
+	//console.log('posts', posts);
 	return (
 		<>
 			<Head>
