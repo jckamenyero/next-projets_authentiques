@@ -1,16 +1,176 @@
-html,
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+*,
+*::before,
+*::after { box-sizing:border-box; }
+
+:root {
+    --text-color:#414042;
+    --background-color:#FAFAFA;
+
+   /* pallier 1 : default */ 
+    --primary-color:#0DAD9C;
+    --secondary-color:#2AE7B5; 
+}
+
+/* pallier 2 */
+[data-theme = "2"] {
+    --primary-color:#0056AA;
+    --secondary-color:#93D5E6;  
+}
+
+/* pallier 3 */
+[data-theme = "3"] {
+    --primary-color:#72B240;
+    --secondary-color:#9DD647;
+}
+
+.bd-navbar {
+    color: white;
+    text-align: center;
+    background-color:#712cf9 ;
+}
+
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--text-color);   
+    background: #ffffff;
+}
+
+h1, h2 {
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 16px;
+    line-height: 24px;
+    font-style: normal; 
+}
+
+.pseudo_h3 {
+    font-size: 16px;
+    line-height: 24px;
+    font-style: normal;     
+    margin-top: 0;
+    margin-bottom: 0.5rem;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+    text-decoration: underline;
+    color: var(--primary-color);
 }
 
-* {
-  box-sizing: border-box;
+a:hover, a:focus {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.banner {
+    position: relative;
+    display: block;
+}
+
+.section_underline {
+    border-bottom: 3px solid var(--primary-color);
+}
+
+.box_bg {
+    background-color:var(--background-color) ;
+}
+
+.domaines_type li {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: var(--background-color);
+    padding: 5px 10px;
+    margin-right:10px;
+    margin-bottom: 20px;
+}
+
+.domaines_type .fas, .domaines_type .fab, .domaines_type .fa-42-group {
+    margin-right: 10px;
+}
+
+.matiere_title {
+    padding: 10px;
+    line-height: 18px;
+    vertical-align: top;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+}
+
+.matiere_title h3 {
+    line-height: 6px;
+    vertical-align: bottom;
+}
+
+.matiere_title span {
+    font-weight: 600;
+}
+
+.fa-stack {
+    font-size: 24px;
+}
+
+.fa-circle {
+  color:#fff;
+}
+
+.fa-stack-1x {
+    color: var(--primary-color);
+}
+
+.bordered {
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+}
+
+.bordered ul, .accordion-body ul {
+    list-style: none;
+    padding-left: 1rem;
+}
+
+.bordered ul li::before, .accordion-body ul li::before {
+    content: "\2022";
+    color: var(--secondary-color);
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+
+.reflexion .icon ::before {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    position: absolute;
+    display: block; 
+    margin-left:-25px;
+    margin-top:4px;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    font-family: "Font Awesome 5 Free";
+    content: "\f0eb";
+    color: var(--primary-color);
+}
+
+.accordion-button {
+    background-color:var(--background-color) !important;
+}
+
+.accordion-button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--text-color) !important;
+    background-color: var(--background-color);
 }
