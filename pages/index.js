@@ -15,7 +15,7 @@ export default function Home({ posts }) {
 				/>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<main>
+			<main data-theme="2">
 				<h1 className="section_underline">Projets Authentiques</h1>
 				<div className="mt-4">
 					<ol>
