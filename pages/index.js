@@ -22,7 +22,7 @@ export default function Home({ posts }) {
 						{posts &&
 							posts.map((post, index) => {
 								return (
-									<li key={index} className="mb-2">
+									<li key={index} className="mb-2 ps-1">
 										{
 											//{post.node.id} - {post.node.uri}
 											//{post.node.projetsAuthentiques.anneeScolaire}
