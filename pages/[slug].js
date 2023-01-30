@@ -24,7 +24,9 @@ export default function Slug({ postData }) {
 						<p dangerouslySetInnerHTML={{ __html: post.description }} />
 					</div>
 					<div className="matieres mt-4 pt-3">
-						<div className="pseudo_h3 fw-bold">Matières et domaines :</div>
+						<div className="pseudo_h3 fw-bold">
+							Matières et domaines ciblés par le projet
+						</div>
 						<ul className="domaines_type list-inline mb-1">
 							{post.matieresSelect &&
 								post.matieresSelect.map((matieresList, index) => {
@@ -40,7 +42,9 @@ export default function Slug({ postData }) {
 					</div>
 
 					<div className="types mt-4">
-						<div className="pseudo_h3 fw-bold">Type de projet :</div>
+						<div className="pseudo_h3 fw-bold">
+							Types de regroupement proposés pour ce projet
+						</div>
 						<p>{post.typeText}</p>
 						<ul className="domaines_type list-inline mb-0">
 							{post.typeProjet &&
