@@ -23,11 +23,6 @@ export default function Home({ posts }) {
 							posts.map((post, index) => {
 								return (
 									<li key={index} className="mb-2 ps-1">
-										{
-											//{post.node.id} - {post.node.uri}
-											//{post.node.projetsAuthentiques.anneeScolaire}
-											//{post.node.projetsAuthentiques.level} &nbsp;&nbsp;
-										}
 										<Link href={post.node.slug}>
 											<a>{post.node.projetsAuthentiques.title}</a>
 										</Link>
