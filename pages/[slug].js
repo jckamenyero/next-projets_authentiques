@@ -63,16 +63,8 @@ export default function Slug({ postData }) {
 				{/* matiere */}
 				<article className="mt-5 pt-3">
 					<h2 className="section_underline pb-3">
-						Projet authentique proposé selon le domaine
+						Projet authentique proposé selon la matière et le domaine
 					</h2>
-
-					{/*
-					<div className="mt-4 py-3 px-4 box_bg rounded-3">
-						<div
-							dangerouslySetInnerHTML={{ __html: post.matiereDescription }}
-						/>
-					</div>
-					 */}
 
 					{post.matiere &&
 						post.matiere.map((matiere, index) => {
