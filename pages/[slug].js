@@ -63,7 +63,7 @@ export default function Slug({ postData }) {
 				{/* matiere */}
 				<article className="mt-5 pt-3">
 					<h2 className="section_underline pb-3">
-						Projet authentique proposé selon la matière et le domaine
+						Projet authentique proposé selon le domaine
 					</h2>
 
 					{/*
